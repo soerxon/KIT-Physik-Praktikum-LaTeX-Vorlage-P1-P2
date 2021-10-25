@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\usepackage[paper=a4paper,left=25mm,right=25mm,top=25mm,bottom=25mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{graphicx,wrapfig}
+\usepackage{mathtools}
+\usepackage{chemformula}
+\usepackage{url}
+\usepackage{gensymb}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{lscape}
+\usepackage{eqnarray, amsmath}
+\usepackage{xcolor,colortbl}
+\usepackage{hyperref}
+\usepackage{import}
+\usepackage{varioref}
+\usepackage{cleveref}
+\usepackage{appendix}
+\usepackage{amssymb}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage[german]{babel}
+\usepackage{siunitx}
+\usepackage{pdfpages}
+\usepackage{tikz}
+\usepackage{adjustbox}
+\usepackage{bm}
+\usepackage{amsmath}
+%\usepackage[center]{caption}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+%--------Deckblatt Versuchsprotokoll----------%
+\import{Kapitel/}{00-1_Deckblatt}
+\pagebreak
+%---------------------------------------------%
+
+%--------Aufgabenblatt----------%
+\import{Kapitel/}{00-2_Aufgabenblatt}
+\pagebreak
+%-------------------------------%
+
+%--------Inhaltsverzeichnis und Abbildungsverzeichnis----------%
+\setcounter{section}{-1} 
+% Bei "\setcounter{section}{-1}" erhält die Einführung die Kapitelnummer "0";
+% Dies kann praktisch sein, um die Kapitelnummer mit den Aufgabennummern der Versuche gleich zu halten.
+% Bei "\setcounter{section}{0}" startet das Inhaltsverzeichnis bei "1".
+\tableofcontents
+%\vspace{50px}   % Abstand zwischen Inhaltsverzeichnis und Abbildungsverzeichnis
+%\listoffigures  % Erstellt ein Abbildungsverzeichnis
+\pagebreak
+%--------------------------------------------------------------%
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%--------Inhalt der Kapitel----------%
+\import{Kapitel/}{00-3_Einführung}
+\pagebreak
+
+\import{Kapitel/}{01}
+\pagebreak
+
+\import{Kapitel/}{02}
+\pagebreak
+
+\import{Kapitel/}{03}
+\pagebreak
+
+\import{Kapitel/}{04}
+\pagebreak
+%------------------------------------%
+
+%--------Quellen----------%
+\import{Kapitel/}{98_Quellen}
+\pagebreak
+%-------------------------%
+
+%--------Anhang (Messprotokoll)----------%
+\import{Kapitel/}{99_Anhang}
+%------------------------%
+
+\end{document}
