@@ -6,6 +6,7 @@
 \usepackage{mathtools}
 \usepackage{chemformula}
 \usepackage{url}
+\usepackage[center]{caption}
 \usepackage{gensymb}
 \usepackage{multirow}
 \usepackage{adjustbox}
@@ -28,11 +29,12 @@
 \usepackage{adjustbox}
 \usepackage{bm}
 \usepackage{amsmath}
-\usepackage[center]{caption}
+\usepackage[normalem]{ulem}
+
 
 \begin{document}
 
-\pagenumbering{gobble}
+\pagenumbering{gobble} %Verhindert die Seitennummerierung auf der Titelseite und Aufgabenbaltt
 
 %--------Deckblatt Versuchsprotokoll----------%
 \import{chapters/}{Deckblatt}
@@ -40,7 +42,7 @@
 %---------------------------------------------%
 
 %--------Aufgabenblatt----------%
-\import{chapters/}{Aufgabenblatt}
+\includepdf[pages=-]{include/Aufgabenblatt.pdf}
 \pagebreak
 %-------------------------------%
 
@@ -49,14 +51,16 @@
 % Bei "\setcounter{section}{-1}" erhält die Einführung die Kapitelnummer "0";
 % Dies kann praktisch sein, um die Kapitelnummer mit den Aufgabennummern der Versuche gleich zu halten.
 % Bei "\setcounter{section}{0}" startet das Inhaltsverzeichnis bei "1".
-\tableofcontents
-%\vspace{50px}   % Abstand zwischen Inhaltsverzeichnis und Abbildungsverzeichnis
+\tableofcontents % Erstellt ein Inhaltsverzeichnis
+%\vspace{50px}   
 %\listoffigures  % Erstellt ein Abbildungsverzeichnis
+%\vspace{50px}   
+%\listoftables  % Erstellt ein Tabellenverzeichnis
 \pagebreak
 %--------------------------------------------------------------%
 
-\pagenumbering{arabic}
-\setcounter{page}{1}
+\pagenumbering{arabic} % Ab hier beginnt die Seitennummerierung
+\setcounter{page}{1}   % mit Seitenzahl 1.
 
 %--------Inhalt der Kapitel----------%
 \import{chapters/}{Einführung}
@@ -77,11 +81,14 @@
 
 %--------Quellen----------%
 \import{chapters/}{Quellen}
+
 \pagebreak
 %-------------------------%
 
 %--------Anhang (Messprotokoll)----------%
-\import{chapters/}{Messprotokoll}
+\section{Messprotokoll}
+\includepdf[pages=-]{include/Messprotokoll.pdf}
 %------------------------%
+
 
 \end{document}
