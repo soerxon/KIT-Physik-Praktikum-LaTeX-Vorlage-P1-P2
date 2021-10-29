@@ -4,7 +4,7 @@ Bilder einfügen
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.3]{Bilder/}
+\includegraphics[scale=0.3]{include/}
 \caption{} % Bilder haben Untertitel
 \label{}
 \end{figure}
