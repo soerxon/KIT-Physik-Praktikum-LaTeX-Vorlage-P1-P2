@@ -29,17 +29,19 @@
 \import{chapters/}{Deckblatt}
 %---------------------------------------------%
 
+\newpage
 \pagenumbering{arabic} % Ab hier beginnt die Seitennummerierung
-\setcounter{page}{1}   % mit Seitenzahl 1.
+\setcounter{page}{1}   % mit Seitenzahl 1. Dies stimmt mit der Seitennummerierung der Aufgabenblätter überein.
 
 %--------Aufgabenblatt----------%
+%\addcontentsline{toc}{chapter}{Aufgabenblatt} %kann so dem Inhaltsverzeichnis hinzugefügt werden
 \includepdf[pages=-]{include/Aufgabenblatt.pdf} 
 % Die Datei Aufgabenblatt.pdf mit dem Inhalt "Test-Test-Test-Test" muss durch das aktuelle Aufgabenblatt des Versuchs ausgetauscht werden.
 %-------------------------------%
 
-%--------Inhaltsverzeichnis und Abbildungsverzeichnis----------%
-\setcounter{chapter}{-1} 
-% Bei "\setcounter{section}{-1}" erhält die Einführung die Kapitelnummer "0";
+%--------Inhaltsverzeichnis, Tabellen- und Abbildungsverzeichnis----------%
+\setcounter{chapter}{0} 
+% Bei "\setcounter{chapter}{-1}" erhält die Einführung die Kapitelnummer "0";
 % Dies kann praktisch sein, um die Kapitelnummer mit den Aufgabennummern der Versuche gleich zu halten.
 % Bei "\setcounter{chapter}{0}" startet das Inhaltsverzeichnis bei "1".
 \tableofcontents % Erstellt ein Inhaltsverzeichnis
@@ -48,7 +50,7 @@
 %\vspace{50px}   
 %\listoftables  % Erstellt ein Tabellenverzeichnis. Dies wird von manchen Tutor:innen gefordert.
 \pagebreak
-%--------------------------------------------------------------%
+%-------------------------------------------------------------------------%
 
 %--------Inhalt der Kapitel----------%
 \import{chapters/}{Einführung}
@@ -67,10 +69,11 @@
 %-------------------------%
 
 %--------Anhang (Messprotokoll)----------%
-\chapter{Messprotokoll}
+\newpage
+\addcontentsline{toc}{chapter}{Messprotokoll}
 \includepdf[pages=-]{include/Messprotokoll.pdf} 
 % Die Datei Messprotokoll.pdf mit dem Inhalt "Test-Test-Test-Test" muss durch das, während des Versuchs erstelltem Messprotokoll, ausgetauscht werden.
-%------------------------%
+%----------------------------------------%
 
 
 \end{document}
