@@ -1,5 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 Bilder einfügen
 
 \begin{figure}[h]
@@ -32,33 +30,23 @@ Text & Text & Text\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-korrekte Wertangabe
+Wertangabe
 
 Entweder:
-
+\begin{align}
 \mathrm{Name} = \SI{Wert}{Einheit}
+\end{align}
 
 oder
-
 \begin{align}
 \mathrm{Name} = Wert\,\mathrm{Einheit}
 \end{align}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-korrekte Fehler-Rechnung Wertangabe
+Fehler-Rechnung Wertangabe
 
 \begin{align}
 \mathrm{Name} = Wert \pm Wert \mathrm{(\delta_{stat})} \pm Wert \mathrm{(\delta_{sys})}\mathrm{Einheit}
 \end{align}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Referenzen auf Bilder und Tabellen im Text
-
-Dies ist ein Beispieltext, der auf ein Beispielbild in Abbildung \ref{Beispielname} zeigt.
-
-\label{Beispielname} muss dazu in den Tabellen und Bildern vorhanden und ausgefüllt sein.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
