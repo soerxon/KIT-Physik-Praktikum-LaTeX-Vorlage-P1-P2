@@ -7,7 +7,7 @@ Bei Fragen oder Problemen könnt ihr euch gerne an soeren@fachschaft.physik.kit.
 2. Füllt die Datei Deckblatt.tex im Ordner chapters mit euren Daten aus.
 3. Schreibt eure Einführung in den Versuch unter chapters/Einführung.tex. Im Inhaltsverzeichnis erhält die Einführung keine Kapitelnummer um die Aufgabennummer mit der Kapitelnummer gleich zu halten. Das macht es für die Tutor*innen und euch einfacher.
 4. Jede Aufgabe wird seperat unter chapters in die passend nummerierte Datei geschrieben. Unter- und Unterunteraufgaben werden mit \section{Name der Unteraufgabe} und \subsection{} begonnen.
-5. Anhänge wir Grafiken oder das Messprotokoll werden im Ordner include abgelegt. Es macht Sinn für jede Aufgabe einen Unterordner in include anzulegen um Ordnung zu bewahren. SOmit könnt ihr die Grafiken schneller wieder finden, wenn sie ausgetauscht werden müssen.
+5. Anhänge wir Grafiken oder das Messprotokoll werden im Ordner include abgelegt. Es macht Sinn für jede Aufgabe einen Unterordner in include anzulegen um Ordnung zu bewahren. Somit könnt ihr die Grafiken schneller wieder finden, wenn sie ausgetauscht werden müssen.
 6. Tauscht die Dateien Aufgabenblatt.pdf und Messptrotokoll.pdf durch das entsprechende Aufgabenblatt und euer eingescanntes, unterschriebenes Messprotokoll aus
 
 ## Copy-Paste Vorlagen
